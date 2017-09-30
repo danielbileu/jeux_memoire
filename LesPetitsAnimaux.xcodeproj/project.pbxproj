@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0F1D3C1F76BC97001FAB19 /* cerf.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F1D361F76BC97001FAB19 /* cerf.png */; };
+		9B0F1D3D1F76BC97001FAB19 /* eccureil.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F1D371F76BC97001FAB19 /* eccureil.png */; };
+		9B0F1D3E1F76BC97001FAB19 /* hibou.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F1D381F76BC97001FAB19 /* hibou.png */; };
+		9B0F1D3F1F76BC97001FAB19 /* ours.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F1D391F76BC97001FAB19 /* ours.png */; };
+		9B0F1D401F76BC97001FAB19 /* raton laveur.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F1D3A1F76BC97001FAB19 /* raton laveur.png */; };
+		9B0F1D411F76BC97001FAB19 /* renard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F1D3B1F76BC97001FAB19 /* renard.png */; };
+		9B0F1D471F76D980001FAB19 /* animaux_forest.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F1D461F76D980001FAB19 /* animaux_forest.png */; };
 		9B6D93251F748D6700CAECE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D93241F748D6700CAECE7 /* AppDelegate.swift */; };
 		9B6D93271F748D6700CAECE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D93261F748D6700CAECE7 /* ViewController.swift */; };
 		9B6D932A1F748D6700CAECE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D93281F748D6700CAECE7 /* Main.storyboard */; };
 		9B6D932C1F748D6700CAECE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D932B1F748D6700CAECE7 /* Assets.xcassets */; };
 		9B6D932F1F748D6700CAECE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D932D1F748D6700CAECE7 /* LaunchScreen.storyboard */; };
+		9B6D933A1F748F4100CAECE7 /* front.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D93371F748F4100CAECE7 /* front.png */; };
+		9B6D933B1F748F4100CAECE7 /* panda.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D93381F748F4100CAECE7 /* panda.png */; };
+		9B6D933C1F748F4100CAECE7 /* penguin.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D93391F748F4100CAECE7 /* penguin.png */; };
+		9B6F442F1F7D61C400126194 /* icon_recommencer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F442E1F7D61C400126194 /* icon_recommencer.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B0F1D361F76BC97001FAB19 /* cerf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cerf.png; path = images/cerf.png; sourceTree = "<group>"; };
+		9B0F1D371F76BC97001FAB19 /* eccureil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eccureil.png; path = images/eccureil.png; sourceTree = "<group>"; };
+		9B0F1D381F76BC97001FAB19 /* hibou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hibou.png; path = images/hibou.png; sourceTree = "<group>"; };
+		9B0F1D391F76BC97001FAB19 /* ours.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ours.png; path = images/ours.png; sourceTree = "<group>"; };
+		9B0F1D3A1F76BC97001FAB19 /* raton laveur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "raton laveur.png"; path = "images/raton laveur.png"; sourceTree = "<group>"; };
+		9B0F1D3B1F76BC97001FAB19 /* renard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = renard.png; path = images/renard.png; sourceTree = "<group>"; };
+		9B0F1D461F76D980001FAB19 /* animaux_forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = animaux_forest.png; path = images/animaux_forest.png; sourceTree = "<group>"; };
 		9B6D93211F748D6700CAECE7 /* LesPetitsAnimaux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LesPetitsAnimaux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6D93241F748D6700CAECE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B6D93261F748D6700CAECE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,10 @@
 		9B6D932B1F748D6700CAECE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B6D932E1F748D6700CAECE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B6D93301F748D6700CAECE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B6D93371F748F4100CAECE7 /* front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = front.png; path = images/front.png; sourceTree = "<group>"; };
+		9B6D93381F748F4100CAECE7 /* panda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = panda.png; path = images/panda.png; sourceTree = "<group>"; };
+		9B6D93391F748F4100CAECE7 /* penguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = penguin.png; path = images/penguin.png; sourceTree = "<group>"; };
+		9B6F442E1F7D61C400126194 /* icon_recommencer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_recommencer.png; path = images/icon_recommencer.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 		9B6D93231F748D6700CAECE7 /* LesPetitsAnimaux */ = {
 			isa = PBXGroup;
 			children = (
+				9B6D93361F748F0900CAECE7 /* Images */,
 				9B6D93241F748D6700CAECE7 /* AppDelegate.swift */,
 				9B6D93261F748D6700CAECE7 /* ViewController.swift */,
 				9B6D93281F748D6700CAECE7 /* Main.storyboard */,
@@ -62,6 +85,24 @@
 				9B6D93301F748D6700CAECE7 /* Info.plist */,
 			);
 			path = LesPetitsAnimaux;
+			sourceTree = "<group>";
+		};
+		9B6D93361F748F0900CAECE7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9B6F442E1F7D61C400126194 /* icon_recommencer.png */,
+				9B0F1D461F76D980001FAB19 /* animaux_forest.png */,
+				9B0F1D361F76BC97001FAB19 /* cerf.png */,
+				9B0F1D371F76BC97001FAB19 /* eccureil.png */,
+				9B0F1D381F76BC97001FAB19 /* hibou.png */,
+				9B0F1D391F76BC97001FAB19 /* ours.png */,
+				9B0F1D3A1F76BC97001FAB19 /* raton laveur.png */,
+				9B0F1D3B1F76BC97001FAB19 /* renard.png */,
+				9B6D93371F748F4100CAECE7 /* front.png */,
+				9B6D93381F748F4100CAECE7 /* panda.png */,
+				9B6D93391F748F4100CAECE7 /* penguin.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +164,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6D933C1F748F4100CAECE7 /* penguin.png in Resources */,
+				9B0F1D3E1F76BC97001FAB19 /* hibou.png in Resources */,
+				9B0F1D3C1F76BC97001FAB19 /* cerf.png in Resources */,
+				9B6D933B1F748F4100CAECE7 /* panda.png in Resources */,
+				9B0F1D3D1F76BC97001FAB19 /* eccureil.png in Resources */,
 				9B6D932F1F748D6700CAECE7 /* LaunchScreen.storyboard in Resources */,
+				9B0F1D3F1F76BC97001FAB19 /* ours.png in Resources */,
+				9B6D933A1F748F4100CAECE7 /* front.png in Resources */,
 				9B6D932C1F748D6700CAECE7 /* Assets.xcassets in Resources */,
+				9B0F1D471F76D980001FAB19 /* animaux_forest.png in Resources */,
+				9B0F1D411F76BC97001FAB19 /* renard.png in Resources */,
+				9B6F442F1F7D61C400126194 /* icon_recommencer.png in Resources */,
 				9B6D932A1F748D6700CAECE7 /* Main.storyboard in Resources */,
+				9B0F1D401F76BC97001FAB19 /* raton laveur.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +351,7 @@
 				9B6D93351F748D6700CAECE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
