@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,17 +21,20 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tgq-4F-mq7" userLabel="Logo">
+                                <rect key="frame" x="197" y="55" width="376" height="149"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xr-0X-1aY" userLabel="card_1">
-                                <rect key="frame" x="409.5" y="580.5" width="205" height="205"/>
+                                <rect key="frame" x="307" y="435" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZ0-vX-nBD" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-JR-rhn" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,13 +46,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7h-Wi-ljs" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="NPr-bf-8TP" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaP-OU-MMS">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="27L-A1-Ihq"/>
                                                 </connections>
@@ -80,13 +84,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgU-Hd-8A5" userLabel="card_2">
-                                <rect key="frame" x="196.5" y="580.5" width="205" height="205"/>
+                                <rect key="frame" x="145" y="435" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qv-zE-zay" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j20-xl-bOc" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -98,13 +102,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vo-bX-FB5" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="DQ0-bt-qbF" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldR-xS-UPH">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Sn-2z-xcr"/>
                                                 </connections>
@@ -135,13 +139,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zP6-J9-32C" userLabel="card_3">
-                                <rect key="frame" x="622.5" y="580.5" width="205" height="205"/>
+                                <rect key="frame" x="469" y="435" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ee9-UH-bej" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vwr-mv-v7T" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -153,13 +157,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A67-GU-0Lr" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="uEl-dH-OFb" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfO-ss-Hqk">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GXf-lh-HWj"/>
                                                 </connections>
@@ -190,13 +194,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIa-V2-nlX" userLabel="card_4">
-                                <rect key="frame" x="409.5" y="793.5" width="205" height="205"/>
+                                <rect key="frame" x="307" y="597" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qnn-7m-hMQ" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3fE-j7-pMv" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -208,13 +212,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Fa-t4-Jsv" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="q4I-NO-c4Z" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlj-ua-PNw">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBN-YF-6Ex"/>
                                                 </connections>
@@ -245,13 +249,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghL-xg-xH7" userLabel="card_5">
-                                <rect key="frame" x="196.5" y="793.5" width="205" height="205"/>
+                                <rect key="frame" x="145" y="597" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hyo-Vk-DcG" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7dp-cQ-b4v" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -263,13 +267,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-AR-kvV" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="8RL-kq-yvi" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnD-5g-bZm">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ee-hm-kkQ"/>
                                                 </connections>
@@ -300,13 +304,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IsE-e9-dnL" userLabel="card_6">
-                                <rect key="frame" x="622.5" y="793.5" width="205" height="205"/>
+                                <rect key="frame" x="469" y="597" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4D-zP-6XN" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dgW-Cs-leV" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -318,13 +322,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1K-HM-cLN" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="BWE-OP-tNJ" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xd-PS-lA8">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GiJ-FE-9ps"/>
                                                 </connections>
@@ -355,13 +359,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGh-mU-1W0" userLabel="card_7">
-                                <rect key="frame" x="409.5" y="367.5" width="205" height="205"/>
+                                <rect key="frame" x="307" y="273" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTL-1B-8lS" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KOd-v2-YJ7" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -373,13 +377,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LtX-kv-NNG" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-lo-Bdo" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwC-b2-KG9">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSC-2y-ihb"/>
                                                 </connections>
@@ -410,13 +414,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34a-Fa-bSz" userLabel="card_8">
-                                <rect key="frame" x="196.5" y="367.5" width="205" height="205"/>
+                                <rect key="frame" x="145" y="273" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYd-OF-tX0" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dIL-3N-dqA" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -428,13 +432,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeQ-4O-he5" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="2ov-nY-kUF" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXp-gR-EfE">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Am-RC-VEc"/>
                                                 </connections>
@@ -465,13 +469,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rdc-Y4-U8a" userLabel="card_9">
-                                <rect key="frame" x="622.5" y="367.5" width="205" height="205"/>
+                                <rect key="frame" x="469" y="273" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHu-nZ-yP1" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jlH-fp-WQj" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -483,13 +487,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfi-va-4st" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="0xJ-qr-Wqn" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLW-mL-3t0">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cal-cg-ZQw"/>
                                                 </connections>
@@ -520,13 +524,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFq-Jh-YXa" userLabel="card_10">
-                                <rect key="frame" x="409.5" y="1006.5" width="205" height="205"/>
+                                <rect key="frame" x="307" y="759" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wh-Kt-doj" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n6p-14-Nkx" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -538,13 +542,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMe-Mj-kg1" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="bqs-Wo-0vm" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wd-Uo-QYP">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DXJ-Mv-4tB"/>
                                                 </connections>
@@ -575,13 +579,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHi-29-1dl" userLabel="card_11">
-                                <rect key="frame" x="196.5" y="1006.5" width="205" height="205"/>
+                                <rect key="frame" x="145" y="759" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIx-p0-2G9" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="65C-Hs-avV" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -593,13 +597,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYg-xI-JTB" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="XIg-7u-7wo" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbc-eX-WSp">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYN-cg-7La"/>
                                                 </connections>
@@ -630,13 +634,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNK-C3-VCh" userLabel="card_12">
-                                <rect key="frame" x="622.5" y="1006.5" width="205" height="205"/>
+                                <rect key="frame" x="469" y="759" width="154" height="154"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoO-Wj-Sj6" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UId-wm-sQy" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -648,13 +652,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqW-t5-sgN" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animaux_forest.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hqz-kL-t9t" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                             </imageView>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7g-AV-pC4">
-                                                <rect key="frame" x="0.0" y="0.0" width="205" height="205"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KqF-39-mTD"/>
                                                 </connections>
@@ -684,40 +688,26 @@
                                     <constraint firstAttribute="trailing" secondItem="YoO-Wj-Sj6" secondAttribute="trailing" id="kxE-sE-f22"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Wm-Hm-Y5w" userLabel="returnButton">
-                                <rect key="frame" x="462" y="1240" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RtQ-nt-TWf">
+                                <rect key="frame" x="348" y="925" width="75" height="75"/>
                                 <subviews>
-                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2BV-fr-ggA" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_recommencer.png" translatesAutoresizingMaskIntoConstraints="NO" id="2kP-oI-mDj">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o5t-iK-8hQ" userLabel="animal">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1F-iM-QEA" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_recommencer.png" translatesAutoresizingMaskIntoConstraints="NO" id="iUD-jI-BBv" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3v3-dp-W9f">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <connections>
-                                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cza-q0-RKf"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mJ-FX-u8E">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <connections>
+                                            <action selector="monResetBouton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bc8-9u-EdX"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6mJ-FX-u8E" secondAttribute="trailing" id="PtM-JO-5Kx"/>
+                                    <constraint firstAttribute="bottom" secondItem="6mJ-FX-u8E" secondAttribute="bottom" id="QCb-Mq-Uzt"/>
+                                    <constraint firstItem="6mJ-FX-u8E" firstAttribute="top" secondItem="RtQ-nt-TWf" secondAttribute="top" id="jnb-f5-vJ8"/>
+                                    <constraint firstItem="6mJ-FX-u8E" firstAttribute="leading" secondItem="RtQ-nt-TWf" secondAttribute="leading" id="oXa-Y8-km7"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -735,10 +725,14 @@
                             <constraint firstItem="sNK-C3-VCh" firstAttribute="leading" secondItem="IsE-e9-dnL" secondAttribute="leading" id="7Sx-Qh-4QS"/>
                             <constraint firstItem="34a-Fa-bSz" firstAttribute="width" secondItem="5xr-0X-1aY" secondAttribute="width" id="7a0-Dl-xv8"/>
                             <constraint firstItem="VFq-Jh-YXa" firstAttribute="leading" secondItem="fHi-29-1dl" secondAttribute="trailing" constant="8" id="9lL-4I-41H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RtQ-nt-TWf" secondAttribute="trailing" constant="325" id="AH7-I8-wBn"/>
                             <constraint firstItem="Rdc-Y4-U8a" firstAttribute="height" secondItem="5xr-0X-1aY" secondAttribute="height" id="AMD-m3-Cex"/>
                             <constraint firstItem="fHi-29-1dl" firstAttribute="height" secondItem="5xr-0X-1aY" secondAttribute="height" id="CDY-i9-oc1"/>
+                            <constraint firstItem="RtQ-nt-TWf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="328" id="Cjd-Pz-SpE"/>
                             <constraint firstItem="5xr-0X-1aY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="E3h-Xw-R3L"/>
+                            <constraint firstItem="Rdc-Y4-U8a" firstAttribute="top" secondItem="tgq-4F-mq7" secondAttribute="bottom" constant="69" id="ERz-RN-PrR"/>
                             <constraint firstItem="kgU-Hd-8A5" firstAttribute="top" secondItem="5xr-0X-1aY" secondAttribute="top" id="F2q-lO-N21"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RtQ-nt-TWf" secondAttribute="bottom" constant="24" id="Hl0-bW-HDK"/>
                             <constraint firstItem="MIa-V2-nlX" firstAttribute="leading" secondItem="ghL-xg-xH7" secondAttribute="trailing" constant="8" id="Hzy-3J-nZX"/>
                             <constraint firstItem="VFq-Jh-YXa" firstAttribute="leading" secondItem="MIa-V2-nlX" secondAttribute="leading" id="JIC-YD-Ppg"/>
                             <constraint firstItem="fHi-29-1dl" firstAttribute="leading" secondItem="ghL-xg-xH7" secondAttribute="leading" id="JVX-Nb-706"/>
@@ -748,10 +742,13 @@
                             <constraint firstItem="UGh-mU-1W0" firstAttribute="leading" secondItem="34a-Fa-bSz" secondAttribute="trailing" constant="8" id="N6f-01-kV1"/>
                             <constraint firstItem="Rdc-Y4-U8a" firstAttribute="leading" secondItem="UGh-mU-1W0" secondAttribute="trailing" constant="8" id="NGy-Z4-YZ1"/>
                             <constraint firstItem="zP6-J9-32C" firstAttribute="width" secondItem="5xr-0X-1aY" secondAttribute="width" id="OwS-FS-OEE"/>
+                            <constraint firstItem="RtQ-nt-TWf" firstAttribute="top" secondItem="VFq-Jh-YXa" secondAttribute="bottom" constant="12" id="PHl-LQ-uZg"/>
                             <constraint firstItem="MIa-V2-nlX" firstAttribute="top" secondItem="5xr-0X-1aY" secondAttribute="bottom" constant="8" id="Q8E-0c-rWr"/>
                             <constraint firstItem="34a-Fa-bSz" firstAttribute="height" secondItem="5xr-0X-1aY" secondAttribute="height" id="ShZ-HL-C6u"/>
                             <constraint firstItem="ghL-xg-xH7" firstAttribute="height" secondItem="5xr-0X-1aY" secondAttribute="height" id="UYE-Tr-WX9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tgq-4F-mq7" secondAttribute="trailing" constant="175" id="Vav-Ed-Xyp"/>
                             <constraint firstItem="sNK-C3-VCh" firstAttribute="height" secondItem="kgU-Hd-8A5" secondAttribute="height" id="X8F-ai-pBC"/>
+                            <constraint firstItem="tgq-4F-mq7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="177" id="XYl-mb-QZt"/>
                             <constraint firstItem="UGh-mU-1W0" firstAttribute="leading" secondItem="5xr-0X-1aY" secondAttribute="leading" id="Ytu-dy-tHM"/>
                             <constraint firstItem="ghL-xg-xH7" firstAttribute="leading" secondItem="kgU-Hd-8A5" secondAttribute="leading" id="a7W-UN-GnD"/>
                             <constraint firstItem="fHi-29-1dl" firstAttribute="width" secondItem="5xr-0X-1aY" secondAttribute="width" id="a8N-Ub-0GQ"/>
@@ -759,6 +756,7 @@
                             <constraint firstItem="zP6-J9-32C" firstAttribute="height" secondItem="5xr-0X-1aY" secondAttribute="height" id="afe-LW-9t6"/>
                             <constraint firstItem="ghL-xg-xH7" firstAttribute="width" secondItem="5xr-0X-1aY" secondAttribute="width" id="b2R-nc-QtK"/>
                             <constraint firstItem="5xr-0X-1aY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bvb-Ld-Uzu"/>
+                            <constraint firstItem="tgq-4F-mq7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="cMP-16-HlY"/>
                             <constraint firstItem="5xr-0X-1aY" firstAttribute="leading" secondItem="kgU-Hd-8A5" secondAttribute="trailing" constant="8" id="cRk-Bs-Ogs"/>
                             <constraint firstItem="VFq-Jh-YXa" firstAttribute="height" secondItem="5xr-0X-1aY" secondAttribute="height" id="cz6-qB-H87"/>
                             <constraint firstItem="kgU-Hd-8A5" firstAttribute="width" secondItem="5xr-0X-1aY" secondAttribute="width" id="dVd-BG-ddt"/>
@@ -826,15 +824,17 @@
                         <outlet property="imgView7" destination="KOd-v2-YJ7" id="Mzo-rB-Sfb"/>
                         <outlet property="imgView8" destination="dIL-3N-dqA" id="5bn-gP-RVP"/>
                         <outlet property="imgView9" destination="jlH-fp-WQj" id="XlL-1h-R9X"/>
+                        <outlet property="viewReset" destination="RtQ-nt-TWf" id="amn-1b-ZOw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.96875" y="123.63281249999999"/>
+            <point key="canvasLocation" x="117.77343749999999" y="123.42606149341141"/>
         </scene>
     </scenes>
     <resources>
         <image name="animaux_forest.png" width="300" height="300"/>
         <image name="icon_recommencer.png" width="300" height="300"/>
+        <image name="logo.png" width="622" height="244"/>
     </resources>
 </document>

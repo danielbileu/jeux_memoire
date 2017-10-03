@@ -14,6 +14,11 @@
 		9B0F1D401F76BC97001FAB19 /* raton laveur.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F1D3A1F76BC97001FAB19 /* raton laveur.png */; };
 		9B0F1D411F76BC97001FAB19 /* renard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F1D3B1F76BC97001FAB19 /* renard.png */; };
 		9B0F1D471F76D980001FAB19 /* animaux_forest.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F1D461F76D980001FAB19 /* animaux_forest.png */; };
+		9B6D2F041F801A22002ADE60 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D2F001F801A22002ADE60 /* background1.png */; };
+		9B6D2F051F801A22002ADE60 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D2F011F801A22002ADE60 /* background2.png */; };
+		9B6D2F061F801A22002ADE60 /* background3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D2F021F801A22002ADE60 /* background3.png */; };
+		9B6D2F071F801A22002ADE60 /* background4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D2F031F801A22002ADE60 /* background4.png */; };
+		9B6D2F091F82CA08002ADE60 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D2F081F82CA08002ADE60 /* logo.png */; };
 		9B6D93251F748D6700CAECE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D93241F748D6700CAECE7 /* AppDelegate.swift */; };
 		9B6D93271F748D6700CAECE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D93261F748D6700CAECE7 /* ViewController.swift */; };
 		9B6D932A1F748D6700CAECE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D93281F748D6700CAECE7 /* Main.storyboard */; };
@@ -33,6 +38,11 @@
 		9B0F1D3A1F76BC97001FAB19 /* raton laveur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "raton laveur.png"; path = "images/raton laveur.png"; sourceTree = "<group>"; };
 		9B0F1D3B1F76BC97001FAB19 /* renard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = renard.png; path = images/renard.png; sourceTree = "<group>"; };
 		9B0F1D461F76D980001FAB19 /* animaux_forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = animaux_forest.png; path = images/animaux_forest.png; sourceTree = "<group>"; };
+		9B6D2F001F801A22002ADE60 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background1.png; path = images/background1.png; sourceTree = "<group>"; };
+		9B6D2F011F801A22002ADE60 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background2.png; path = images/background2.png; sourceTree = "<group>"; };
+		9B6D2F021F801A22002ADE60 /* background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background3.png; path = images/background3.png; sourceTree = "<group>"; };
+		9B6D2F031F801A22002ADE60 /* background4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background4.png; path = images/background4.png; sourceTree = "<group>"; };
+		9B6D2F081F82CA08002ADE60 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = images/logo.png; sourceTree = "<group>"; };
 		9B6D93211F748D6700CAECE7 /* LesPetitsAnimaux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LesPetitsAnimaux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6D93241F748D6700CAECE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B6D93261F748D6700CAECE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +100,11 @@
 		9B6D93361F748F0900CAECE7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9B6D2F081F82CA08002ADE60 /* logo.png */,
+				9B6D2F001F801A22002ADE60 /* background1.png */,
+				9B6D2F011F801A22002ADE60 /* background2.png */,
+				9B6D2F021F801A22002ADE60 /* background3.png */,
+				9B6D2F031F801A22002ADE60 /* background4.png */,
 				9B6F442E1F7D61C400126194 /* icon_recommencer.png */,
 				9B0F1D461F76D980001FAB19 /* animaux_forest.png */,
 				9B0F1D361F76BC97001FAB19 /* cerf.png */,
@@ -168,15 +183,20 @@
 				9B0F1D3E1F76BC97001FAB19 /* hibou.png in Resources */,
 				9B0F1D3C1F76BC97001FAB19 /* cerf.png in Resources */,
 				9B6D933B1F748F4100CAECE7 /* panda.png in Resources */,
+				9B6D2F051F801A22002ADE60 /* background2.png in Resources */,
 				9B0F1D3D1F76BC97001FAB19 /* eccureil.png in Resources */,
 				9B6D932F1F748D6700CAECE7 /* LaunchScreen.storyboard in Resources */,
 				9B0F1D3F1F76BC97001FAB19 /* ours.png in Resources */,
+				9B6D2F061F801A22002ADE60 /* background3.png in Resources */,
 				9B6D933A1F748F4100CAECE7 /* front.png in Resources */,
+				9B6D2F071F801A22002ADE60 /* background4.png in Resources */,
 				9B6D932C1F748D6700CAECE7 /* Assets.xcassets in Resources */,
+				9B6D2F091F82CA08002ADE60 /* logo.png in Resources */,
 				9B0F1D471F76D980001FAB19 /* animaux_forest.png in Resources */,
 				9B0F1D411F76BC97001FAB19 /* renard.png in Resources */,
 				9B6F442F1F7D61C400126194 /* icon_recommencer.png in Resources */,
 				9B6D932A1F748D6700CAECE7 /* Main.storyboard in Resources */,
+				9B6D2F041F801A22002ADE60 /* background1.png in Resources */,
 				9B0F1D401F76BC97001FAB19 /* raton laveur.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
