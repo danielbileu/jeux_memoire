@@ -69,31 +69,21 @@ class ViewController: UIViewController {
     var arrayOfRandomAnimalNames = [String]()
     var arrayChosenCards = [String]()
     var arrayOfCards = [UIView]()
-    
     var arrayOfShowingBacks = [UIView]()
     var arrayOfHidingFronts = [UIView]()
-    
     var cards: [UIView]!
-    
     var jouezDeNouveau = 0
     
     //--------Lorsque le document est prêt...arrange les images dans le Array au azar-----------
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         arrayOfImageViews = [imgView1, imgView2, imgView3, imgView4,imgView5, imgView6, imgView7, imgView8, imgView9, imgView10, imgView11, imgView12]
-      
         arrayOfAnimalNames = ["cerf.png", "eccureil.png", "hibou.png", "ours.png", "raton laveur.png", "renard.png", "cerf.png", "eccureil.png", "hibou.png", "ours.png", "raton laveur.png", "renard.png"]
-        
-       
         randomAnimals()
         setImagesToCards()
         jouezDeNouveau = 0
         viewReset.isHidden = true
-      
     }
-    
-    
 //=========Les fonctions=====
     
     
@@ -102,7 +92,6 @@ class ViewController: UIViewController {
         if arrayOfHidingFronts.count == 2 {
             return
         }
-        
         switch sender.tag {
         case 0:
             flipCard(from: front_1, to: back_1)
@@ -167,14 +156,13 @@ class ViewController: UIViewController {
         default:
             break
         }
+        
         arrayChosenCards.append(arrayOfRandomAnimalNames[sender.tag])
         verification()
         apparaitreResetBouton()
-
-        
     }
     
-    //----------Ici je crée la Fonction que vais montré le bouton de reset aprées le fin du joue-- MAS ÇA NE MARCHE PAS...
+    //----------Ici je crée la Fonction que vais montré le bouton de reset aprées le fin du joue
     func apparaitreResetBouton() {
         if jouezDeNouveau == 6 {
             viewReset.isHidden = false
@@ -202,7 +190,7 @@ class ViewController: UIViewController {
         }
     }
     
-    //----------Faire au azar---------
+    //----------Faire au hasard---------
     func randomAnimals() {
         let numberOfAnimals = arrayOfAnimalNames.count
         for _ in 1...numberOfAnimals {
@@ -261,9 +249,6 @@ class ViewController: UIViewController {
     //-------------------
 
    @IBAction func monResetBouton(_ sender: UIButton) {
-    
-    
-    
         card_1.isHidden = false
         card_2.isHidden = false
         card_3.isHidden = false
@@ -276,12 +261,9 @@ class ViewController: UIViewController {
         card_10.isHidden = false
         card_11.isHidden = false
         card_12.isHidden = false
-    
         arrayOfImageViews = [imgView1, imgView2, imgView3, imgView4,imgView5, imgView6, imgView7, imgView8, imgView9, imgView10, imgView11, imgView12]
-    
         arrayOfAnimalNames = ["cerf.png", "eccureil.png", "hibou.png", "ours.png", "raton laveur.png", "renard.png", "cerf.png", "eccureil.png", "hibou.png", "ours.png", "raton laveur.png", "renard.png"]
-    
-    
+        arrayOfRandomAnimalNames = []
         randomAnimals()
         setImagesToCards()
         jouezDeNouveau = 0
