@@ -74,7 +74,7 @@ class ViewController: UIViewController {
     var cards: [UIView]!
     var jouezDeNouveau = 0
     
-    //--------Lorsque le document est prêt...arrange les images dans le Array au azar-----------
+    //--------Lorsque le document est prêt...arrange les images dans le Array au hasard-----------
     override func viewDidLoad() {
         super.viewDidLoad()
         arrayOfImageViews = [imgView1, imgView2, imgView3, imgView4,imgView5, imgView6, imgView7, imgView8, imgView9, imgView10, imgView11, imgView12]
@@ -87,7 +87,7 @@ class ViewController: UIViewController {
 //=========Les fonctions=====
     
     
-    //---------Le boton d'action. On click, il tourne.----------
+    //---------Le boton d'action. Si pressioné, il tourne.----------
     @IBAction func showCard(_ sender: UIButton) {
         if arrayOfHidingFronts.count == 2 {
             return
@@ -156,13 +156,12 @@ class ViewController: UIViewController {
         default:
             break
         }
-        
         arrayChosenCards.append(arrayOfRandomAnimalNames[sender.tag])
         verification()
         apparaitreResetBouton()
     }
     
-    //----------Ici je crée la Fonction que vais montré le bouton de reset aprées le fin du joue
+    //----------Ici je crée la Fonction que vais montré le bouton de reset aprés les 6 paires sont trouvés
     func apparaitreResetBouton() {
         if jouezDeNouveau == 6 {
             viewReset.isHidden = false
@@ -200,7 +199,7 @@ class ViewController: UIViewController {
         }
     }
     
-    //----------Pour coucher les cartes que ne sont pas egaux ---------
+    //----------Pour coucher les cartes que ne sont pas egaux---------
     func resetCards() {
         if arrayOfShowingBacks.count == 2 {
             Timer.scheduledTimer(timeInterval: 2,
@@ -246,8 +245,7 @@ class ViewController: UIViewController {
         arrayOfHidingFronts = []
     }
     
-    //-------------------
-
+    //---------Ici on vais mettre les images en chaque imgView au hasard en pressionent le bouton Reset. Aussi, cache le bouton Reset dans le ligne "viewReset.isHidden = true" ----------
    @IBAction func monResetBouton(_ sender: UIButton) {
         card_1.isHidden = false
         card_2.isHidden = false
@@ -268,9 +266,5 @@ class ViewController: UIViewController {
         setImagesToCards()
         jouezDeNouveau = 0
         viewReset.isHidden = true
-
-  
-    
-    
     }
 }
